@@ -1,0 +1,21 @@
+﻿@inherits LayoutComponentBase
+@using MudBlazor
+@using MudBlazor.Components
+
+<MudLayout>
+    <!-- Top Navigation Bar -->
+    <MudAppBar Elevation="3">
+        <!-- Add your top navigation items here -->
+        <!-- Example: Home, Settings, User Profile, etc. -->
+    </MudAppBar>
+
+    <!-- Custom NavMenu -->
+    <NavMenu />
+
+    <!-- Main Content Area -->
+    <MudMainContent Class="pt-16 px-16">
+        <MudContainer Class="mt-6">
+            @Body <!-- Render the page content here -->
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
